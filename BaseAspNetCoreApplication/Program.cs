@@ -21,6 +21,7 @@ namespace BaseAspNetCoreApplication
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                });
+                })
+            .UseAutofac();
     }
 }
